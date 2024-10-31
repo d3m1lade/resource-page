@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!--Intro container-->
+    <div class="intro-container" id="intro-container">
+        <div class="welcome-container">
+            <h4>Welcome</h4>
+        </div>
+
+        <div class="button_container" id="button_container">
+            <button type="submit" id="button"> Create A Resource</button>
+        </div>
+    </div>
+
+    <!--form-->
+    <div class="modal_overlay" class="modal_overlay_visible" id="modal_overlay">
+        <div class="form_container">
+
+            <div class="exit_container">
+                <i class="fa-solid fa-xmark" id="exit_button"></i>
+            </div>
+
+            <div class="form_title_container">
+                <h4 class="form_title">Create Resource</h4>
+            </div>
+
+            <form  id="form" type="submit">
+                <div class="input_group">
+                    <label for="name" id="nameoflabel">Name Of Website</label>
+                    <input type="text" name="name" id="nameofwebsite" placeholder="Enter the name of the website">
+                    <div id="alert_container">
+                        <p id="name_alert" class="alert"></p>
+                    </div>
+                </div>
+    
+                <div class="input_group">
+                    <label for="link" id="nameoflinklabel">Link Of Website</label>
+                    <input type="text" name="link" id="link" placeholder="Input the link to the website">
+                    <div id="alert_container">
+                        <p id="link_alert" class="alert"></p>
+                    </div>
+                </div>
+    
+                <div class="input_group">
+                    <label for="Description" id="Description">Description Of Website</label>
+                    <textarea name="Description" id="DescriptionTextArea" type="text" placeholder="Give a description of the website" rows="4" cols="50"></textarea>
+                    <div id="alert_container">
+                        <p id="description_alert" class="alert"></p>
+                    </div>
+                </div>
+    
+                <div class="form_button_container">
+                    <button type="submit" class="form_button" id="form_button" >Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!--Dynamic container-->
+    <div class="Single-container" id="single_container">
+    <!-- <div class="resource-frame" id="resource-frame">
+            <div class="top-container" id="top-container">
+                <div class="title_container">
+                    <a href="" id="link_container"><h4 id="text_container"></h4></a>
+                    
+                </div>
+
+                <div class="delete_icon_container">
+                    <i class="fa-solid fa-trash"></i>
+                </div>
+            </div>
+
+            <div class="bottom-container" id="bottom-container">
+                <p></p>
+            </div>
+        </div>-->
+    </div>
+    <script src="./style.js"></script>
+</body>
+</html>

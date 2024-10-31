@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+:root {
+    --blue: #009FF5;
+    --white: #FAFAFA;
+    --grey: #ECECEC;
+    --border: #1E1E1E;
+    --text_color: #000000;
+    --box_border: #d7d7d7;
+    --anchor: #23123D;
+    --paragraph: #777777; 
+    --error: red;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    padding: 2.5rem;
+    z-index: 2;
+    position: relative;
+}
+
+i {
+    color: var(--anchor);
+    cursor: pointer;
+}
+
+
+/*---------------TOP CONTAINER-----------------*/
+.intro-container {
+    width: 100%;
+    height: auto;
+    padding: 3rem 2rem;
+    background-color: var(--grey);
+    border: 1px solid var(--box_border);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1rem;
+    border-radius: 12px;
+}
+
+.welcome-container {
+width: 100%;
+height: auto;
+}
+
+.welcome-container h4 {
+color: var(--text_color);
+/* resource app - 1/Desktop/Headings/Heading 2 */
+font-family: Roboto;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 112.5%; /* 27px */
+}
+
+.button_container {
+    width: 360px;
+    height: 48px;
+}
+
+.button_container button {
+padding: 1rem 4rem;
+border-radius: 10px;
+border: 1px solid #1e1e1e;
+background-color: var(--blue);
+color: var(--white);
+outline: none;
+border: none;
+cursor: pointer;
+}
+
+
+/*---------------DYNAMIC CONTAINER-----------------*/
+.Single-container {
+    width: 100%;
+    height: auto;
+    padding: 3rem 2rem;
+    background-color: var(--grey);
+    border: 1px solid var(--box_border);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    column-gap: 1rem;
+    border-radius: 12px;
+    margin-top: 6rem;
+}
+
+
+.resource-frame {
+    width: 30%;
+    height: auto;
+    padding: 1.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 0.3px solid var(--box_border);
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+    row-gap: 1rem;
+    flex-grow: 1;           /*to make the cards grow evenly*/
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+
+.top-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.title_container a {
+text-decoration: none;
+font-weight: 600;
+color: var(--anchor);
+word-wrap: break-word;
+white-space: normal;
+}
+
+.delete_icon_container {
+    width: 24px;
+    height: 24px;
+}
+
+.delete_icon_container i {
+cursor: pointer;
+color: var(--anchor);
+}
+
+.bottom-container {
+    width: 100%;
+    height: auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    
+}
+
+
+.bottom-container p {
+    color: var(--paragraph);
+    width: 100%;
+    height: auto;
+    display: flex;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    /* testing - 1/Mobile/Body/Highlight Accent */
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 19.2px */
+}
+/*---------------FORM CONTAINER-----------------*/
+.modal_overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.modal_overlay_visible {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+}
+
+
+.form_container {
+    width: 32%;
+    height: auto;
+    background-color: var(--white);
+    padding: 2rem 1.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.exit_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.form_title_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_title_container h4 {
+    color: var(--text_color);
+
+    /* resource app - 1/Desktop/Body/Feature Accent */
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 28.8px */
+}
+
+
+/* ---------------------FORM------------------------ */
+
+form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    row-gap: 0.5rem;
+}
+
+.input_group {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.25rem;
+}
+
+.input_group label {
+    color: var(--text_color);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+}
+
+input {
+    width: 100%;
+    height: auto;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--box_border);
+    border-radius: 0.5rem;
+}
+
+textarea {
+    width: 100%;
+    height: auto;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--box_border);
+    border-radius: 0.5rem;
+}
+
+
+.form_button_container {
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_button_container button {
+    width: 100%;
+    height: auto;
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: var(--white);
+    background-color: var(--blue);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 16.8px */
+}
+
+.alert {
+    color: var(--error);
+    font-weight: 400;
+    font-size: small;
+}
